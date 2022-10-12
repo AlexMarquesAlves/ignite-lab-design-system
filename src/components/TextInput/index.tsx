@@ -25,13 +25,11 @@ const TextInputRoot = (props: TextInputRootProps) => {
     </div>
   );
 };
-
 TextInputRoot.displayName = "TextInput.Root";
 
 const TextInputIcon = (props: TextInputIconProps) => {
   return <Slot className="w-6 h-6 text-gray-400">{props.children}</Slot>;
 };
-
 TextInputIcon.displayName = "TextInput.Icon";
 
 const TextInputInput = (props: TextInputInputProps) => {
@@ -42,7 +40,6 @@ const TextInputInput = (props: TextInputInputProps) => {
     />
   );
 };
-
 TextInputInput.displayName = "TextInput.Input";
 
 export const TextInput = {
