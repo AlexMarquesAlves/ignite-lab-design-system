@@ -1,11 +1,22 @@
 import { Meta, StoryObj } from "@storybook/react";
+import { Text, TextProps } from "./";
 
 export default {
   title: "components/Text",
   component: Text,
-} as Meta;
+  args: {
+    children: "Lorem ipsum",
+  },
+} as Meta<TextProps>;
 
-export const Default: StoryObj = {};
-
-export const Small: StoryObj = {};
-export const Large: StoryObj = {};
+export const Default: StoryObj<TextProps> = {};
+export const Small: StoryObj<TextProps> = {
+  args: {
+    size: "sm",
+  },
+};
+export const Large: StoryObj<TextProps> = {
+  args: {
+    size: "lg",
+  },
+};
